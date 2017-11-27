@@ -9,8 +9,8 @@ from time import ctime
 tlds = ('com', 'edu', 'net', 'org', 'gov')
 with open('redata.txt', 'w') as f:
     for i in range(randrange(5,11)):
-        dtint = randrange(maxsize)   #取一个随机数
-        dtstr = ctime(math.pow(2,32))      #随机数转换为时间
+        dtint = randrange(math.pow(2,32))   #取一个随机数
+        dtstr = ctime(dtint)      #随机数转换为时间
         llen = randrange(4,8)     #限定生成数据长度
         email_name = ''.join(choice(lc) for j in range(llen))
         dlen = randrange(llen, 13)
