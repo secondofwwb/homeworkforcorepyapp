@@ -22,7 +22,7 @@ while True:
     data = input('>')
     if not data:
         break
-    udpCliSock.sendto(data.encode('utf-8'), addr)
+    udpCliSock.sendto(data.encode(), addr)
     data, addr = udpCliSock.recvfrom(bufsiz)
     if not data:
         break
