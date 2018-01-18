@@ -30,9 +30,8 @@ if __name__ == '__main__':
         if data.decode() == 'on1line':
             save_client(data,addr,list_flag)
         if data.decode() == 'touser+username':
-
-
-        socket_s.sendto(data2, addr2)
+            pass
+            # socket_s.sendto(data2, addr2)
 
 
 
